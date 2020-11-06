@@ -1,0 +1,32 @@
+body {
+  background-color: hotpink;
+  font-size: 10rem;
+  margin: 0px;
+  overflow: hidden;
+}
+
+circle {
+  fill: purple;
+  opacity: 0.5;
+}
+
+text {
+  font-family: sans-serif;
+}
+
+.tick text {
+  fill: #635F5D;
+}
+
+.tick line {
+  stroke: #C0C0BB;
+}
+
+.axis-label {
+  font-size: 2.3em;
+  fill: #635F5D;
+}
+
+.title {
+  font-size: 2.5em
+}
