@@ -4,7 +4,7 @@ import './../scss/main.scss';
 
 // sayHello();
 // scatterPlot();
-import { select } from 'd3'
+import { select } from 'd3';
 // import { render } from 'sass';
 
 // Specificaties parkeergebied API:
@@ -15,40 +15,52 @@ const svg = select('svg');
 const height = parseFloat(svg.attr('height'));
 const width = parseFloat(svg.attr('width'));
 
-fetchData(API_1, API_2)
-  .then((data) => {
-    console.log(data);
-    data.forEach((column) => {
-      column.chargingpointCapacity = parseInt(column.chargingpointCapacity);
-      column.parkingCapacity = parseInt(column.parkingCapacity);
-    });
-    createViz(data);
-  })
+prepare();
+
+async function prepare() {
+  const facilitiesData = await fetchData(API_1);
+  const locationData = await fetchData(API_2);
+  const mergedData = mergeData(facilitiesData, locationData);
+  const preparedData = prepareData(mergedData);
+  createViz(preparedData);
+}
 
 
 function createViz(data) {
-  console.log(data);
+  const first40 = data.slice(0, 40);
+  console.log(first40);
   // const xValue = (column) => column.
   // const yValue = (column) => column.descr
 }
 
-async function fetchData(url, url2) {
-  const response1 = await fetch(url)
-  const dataset1 = await response1.json()
+// Cleaning the dataset by parsing the strings to integers and floats:
+function prepareData(dataset) {
+  dataset.forEach(column => {
+    column.chargingCapacity = parseInt(column.chargingCapacity);
+    column.parkingCapacity = parseInt(column.parkingCapacity);
+    column.location.latitude = parseFloat(column.location.latitude);
+    column.location.longitude = parseFloat(column.location.longitude);
+  })
+  return dataset;
+}
 
-  const response2 = await fetch(url2)
-  const dataset2 = await response2.json()
-
-  const newDataArray = dataset2.map((item) => {
+// Merging the two datasets together:
+function mergeData(dataset1, dataset2) {
+  return dataset2.map((item) => {
     const specs = dataset1.find((obj) => item.areaid === obj.areaid);
-    //console.log(specs);
     if (specs !== undefined) {
-      // console.log(specs.chargingpointcapacity);
-      item.chargingpointCapacity = specs.chargingpointcapacity;
+      item.chargingCapacity = specs.chargingpointcapacity;
       item.parkingCapacity = specs.capacity;
+    } else {
+      item.chargingpointCapacity = 0;
+      item.parkingCapacity = 0;
     }
-    // item.specs = specs;
     return item;
   })
-  return newDataArray;
+}
+
+//Fetching the response from the url and returned it as a json type:
+async function fetchData(url) {
+  const response = await fetch(url);
+  return await response.json();
 }
