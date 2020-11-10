@@ -1,10 +1,13 @@
 body {
-  background-color: hotpink;
   font-size: 10rem;
   margin: 0px;
-  overflow: hidden;
 }
 
+svg {
+  display: block;
+  margin: auto;
+  background-color: plum;
+}
 circle {
   fill: purple;
   opacity: 0.5;
