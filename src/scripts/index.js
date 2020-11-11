@@ -1,3 +1,4 @@
+import 'regenerator-runtime/runtime'
 import './../scss/main.scss';
 import { mergeData, cleanData, toIntegers } from './modules/prepareData';
 import { fetchData } from './modules/collectData';
