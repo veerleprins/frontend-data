@@ -1,12 +1,16 @@
 # Frontend Data
+
+## Table of contents:
+* [Description](#:black_nib:-Description)
+
 ## :black_nib: Description
 For the Frontend Data course within the Information Design semester (@cmda-tt) we learn about the library D3 in JavaScript. This allows visualizations to be made.
 
 This repository shows functional programming using survey data from CMD students from the information design semester. Later in the course, different datasets provided by the RDW will be used to create a visualization with the theme of **Cars in the city**. This visualization will visualize the following main question:
 
-**What about parking an electric car compared to parking as a disabled person in the Netherlands?**
+**How about parking an electric car in the Netherlands?**
 
-In order to be able to visualize this main question, several subquestions have been created. You can find these in my [wiki - Concept]()
+In order to be able to visualize this main question, several sub questions have been created. You can find these in my [wiki - Concept](https://github.com/veerleprins/frontend-data/wiki/Concept)
 
 <!-- ## Feature -->
 
@@ -54,7 +58,11 @@ Go to the repository in the terminal and add the following line of code below:
 
 Now you can go to http://localhost:1234/ in your browser and view the visualization! :raised_hands:
 
-<!-- ## :globe_with_meridians: Deploy -->
+## :globe_with_meridians: Deploy
+To view my site online, please click on the link below:  
+
+https://veerleprins-frontenddata.netlify.app/
+
 ## :books: Sources
 **Dataset sources**
 * RDW. (October 30, 2020). Open Data Parkeren: SPECIFICATIES PARKEERGEBIED | Open Data | RDW [Dataset]. https://opendata.rdw.nl/Parkeren/Open-Data-Parkeren-SPECIFICATIES-PARKEERGEBIED/b3us-f26s
@@ -65,6 +73,10 @@ Now you can go to http://localhost:1234/ in your browser and view the visualizat
 * Stack Overflow, & Shaikh, A. (April 24, 2012). RegEx remove parentheses from string. Stack Overflow. https://stackoverflow.com/questions/10295637/regex-remove-parentheses-from-string
 * Stack Overflow, & Down, T. (April 11, 2011). RGB to hex and hex to RGB. Stack Overflow. https://stackoverflow.com/questions/5623838/rgb-to-hex-and-hex-to-rgb
 * MDN. (October 8, 2020). Array.prototype.filter(). MDN Web Docs. https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter
+* CurranKelleher. (2018, 23 augustus). Data Visualization 2018 Course Overview [Video]. YouTube. https://www.youtube.com/watch?v=4e3NF8ez95w&list=PL9yYRbwpkykvOXrZumtZWbuaXWHvjD8gi&ab_channel=CurranKelleher
+* Kelleher, C. & VizHub. (z.d.). Making a Bar Chart. VizHub. Geraadpleegd op 2 november 2020, van https://vizhub.com/curran/326730c80fc54969ae501fb58c8cb94b?edit=files&file=index.js
+* Mao, A. & StackOverflow. (2013, 22 maart). d3 remove decimal values from chart. Stack Overflow. https://stackoverflow.com/questions/15578189/d3-remove-decimal-values-from-chart
+* 
 
 ## :lock: License
 This repo is licensed as [MIT](https://github.com/veerleprins/functional-programming/blob/main/LICENSE) by :copyright: [Veerle Prins](https://github.com/veerleprins), 2020
