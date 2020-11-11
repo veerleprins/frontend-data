@@ -36,7 +36,6 @@ const fGroup = svg
 
 
 export function createViz (data) {
-  // const vizData = data;
   const vizData = data.splice(10, 30);
   console.log(vizData);
   createTitle('Charging points per parking area');
@@ -57,16 +56,16 @@ function createTitle(title) {
 
 function createScales(data) {
   xScale
-    .domain(data.map(p => p.areadesc))
+    .domain(data.map(p => p.description))
     .range([0, width]);
   yScale
-    .domain([0, max(data, d => d.chargingCapacity)])
+    .domain([0, max(data, d => d.chargingPoints)])
     .range([innerHeight, 0])
     .nice();
 }
 
 function createAxis(data) {
-  const maxLength = max(data, d => d.chargingCapacity);
+  const maxLength = max(data, d => d.chargingPoints);
   fGroup
     .append('g')
       .attr('class', 'axis axis-y')
@@ -102,8 +101,15 @@ function createChart(data) {
     .enter()
     .append('rect')
       .attr('class', 'bars')
-      .attr('x', p => xScale(p.areadesc))
-      .attr('y', p => yScale(p.chargingCapacity))
+      .attr('x', p => xScale(p.description))
+      .attr('y', p => yScale(p.chargingPoints))
       .attr('width', xScale.bandwidth())
-      .attr('height', d => innerHeight - yScale(d.chargingCapacity));
+      // .attr('height', d => innerHeight - yScale(d.chargingCapacity));
+      .attr('height', 0);
+
+      fGroup
+        .selectAll('rect')
+        .transition()
+        .duration(3000)
+        .attr('height',  d => innerHeight - yScale(d.chargingPoints));
 }

@@ -2,7 +2,7 @@
 
 ## Table of contents:
 * [Description](#black_nib-description)
-* [Datasets](#link-dataset)
+* [Datasets](#link-datasets)
 * [Install](#arrow_down-install)
 * [Deploy](#globe_with_meridians-deploy)
 * [Sources](#books-sources)
@@ -18,7 +18,7 @@ In order to be able to visualize this main question, several sub questions have 
 
 <!-- ## Feature -->
 
-## :link: Dataset
+## :link: Datasets
 The dataset that was used first is the survey data of 93 CMD students who followed the Information Design semester in year 2020.
 
 Later in the project, the datasets supplied by the RDW will be used on behalf of *De Volkskrant*. These are public datasets and can be found at the links below:
@@ -68,10 +68,13 @@ To view my site online, please click on the link below:
 https://veerleprins-frontenddata.netlify.app/
 
 ## :books: Sources
-**Dataset sources**
+**Dataset sources:**   
+
 * RDW. (October 30, 2020). Open Data Parkeren: SPECIFICATIES PARKEERGEBIED | Open Data | RDW [Dataset]. https://opendata.rdw.nl/Parkeren/Open-Data-Parkeren-SPECIFICATIES-PARKEERGEBIED/b3us-f26s
-* RDW. (October 30, 2020). GEO Parkeer Garages | Open Data | RDW [Dataset]. https://opendata.rdw.nl/Parkeren/GEO-Parkeer-Garages/t5pc-eb34
-**Code Sources**
+* RDW. (October 30, 2020). GEO Parkeer Garages | Open Data | RDW [Dataset]. https://opendata.rdw.nl/Parkeren/GEO-Parkeer-Garages/t5pc-eb34   
+
+**Code Sources:**   
+
 * Pavlutin, D. (September 17, 2020). How to Use Fetch with async/await. Dmitri Pavlutin Blog. https://dmitripavlutin.com/javascript-fetch-async-await/
 * MDN. (2020, 17 augustus). Regular expressions. MDN Web Docs. https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions
 * Stack Overflow, & Shaikh, A. (April 24, 2012). RegEx remove parentheses from string. Stack Overflow. https://stackoverflow.com/questions/10295637/regex-remove-parentheses-from-string
@@ -80,7 +83,6 @@ https://veerleprins-frontenddata.netlify.app/
 * CurranKelleher. (2018, 23 augustus). Data Visualization 2018 Course Overview [Video]. YouTube. https://www.youtube.com/watch?v=4e3NF8ez95w&list=PL9yYRbwpkykvOXrZumtZWbuaXWHvjD8gi&ab_channel=CurranKelleher
 * Kelleher, C. & VizHub. (z.d.). Making a Bar Chart. VizHub. Geraadpleegd op 2 november 2020, van https://vizhub.com/curran/326730c80fc54969ae501fb58c8cb94b?edit=files&file=index.js
 * Mao, A. & StackOverflow. (2013, 22 maart). d3 remove decimal values from chart. Stack Overflow. https://stackoverflow.com/questions/15578189/d3-remove-decimal-values-from-chart
-* 
 
 ## :lock: License
 This repo is licensed as [MIT](https://github.com/veerleprins/functional-programming/blob/main/LICENSE) by :copyright: [Veerle Prins](https://github.com/veerleprins), 2020
