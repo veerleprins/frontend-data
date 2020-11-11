@@ -1,9 +1,11 @@
 # Frontend Data
 
 ## Table of contents:
-* [Description](#description)
-* [Dataset](#dataset)
-* [Install](#install)
+* [Description](#black_nib-description)
+* [Datasets](#link-dataset)
+* [Install](#arrow_down-install)
+* [Deploy](#globe_with_meridians-deploy)
+* [Sources](#books-sources)
 
 ## :black_nib: Description
 For the Frontend Data course within the Information Design semester (@cmda-tt) we learn about the library D3 in JavaScript. This allows visualizations to be made.
