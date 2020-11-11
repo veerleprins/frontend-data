@@ -1,16 +1,16 @@
 body {
-  font-size: 10rem;
+  font-size: 1rem;
   margin: 0px;
 }
 
 svg {
   display: block;
   margin: auto;
-  background-color: plum;
 }
-circle {
-  fill: purple;
-  opacity: 0.5;
+
+.bars {
+  // fill: #033379;
+  fill: #4F61A1;
 }
 
 text {
@@ -26,10 +26,11 @@ text {
 }
 
 .axis-label {
-  font-size: 2.3em;
+  font-size: 1em;
   fill: #635F5D;
 }
 
 .title {
-  font-size: 2.5em
+  font-size: 2em;
+  text-anchor: middle;
 }

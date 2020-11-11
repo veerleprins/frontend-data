@@ -1,12 +1,19 @@
 // Cleaning the dataset by parsing the strings to integers and floats:
 export function cleanData(dataset) {
+  let data = toIntegers(dataset, 'chargingCapacity');
+  console.log('this is the data: ' + data);
   dataset.map(column => {
-    column.chargingCapacity = +column.chargingCapacity;
+    // console.log(column['chargingCapacity']);
+    // column.chargingCapacity = +column.chargingCapacity;
     column.parkingCapacity = +column.parkingCapacity;
     column.location.latitude = +column.location.latitude;
     column.location.longitude = +column.location.longitude;
   })
   return dataset;
+}
+
+export function toIntegers(dataArray, column) {
+  return dataArray.map(arrItem => arrItem[column] = parseInt(arrItem[column]));
 }
 
 // Merging the two datasets together:

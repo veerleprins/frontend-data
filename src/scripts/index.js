@@ -1,7 +1,7 @@
 import './../scss/main.scss';
-import { mergeData, cleanData } from './modules/prepareData';
+import { mergeData, cleanData, toIntegers } from './modules/prepareData';
 import { fetchData } from './modules/collectData';
-import {createViz} from './modules/visualizeData.js'
+import {createViz} from './modules/BarChart.js'
 // import { select, json, scaleLinear, max, scaleBand, range, descending } from 'd3';
 
 // The two API's needed for the visualization:
