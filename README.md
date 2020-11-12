@@ -2,6 +2,7 @@
 
 ## Table of contents:
 * [Description](#black_nib-description)
+* [Feature](#small_orange_diamond-feature)
 * [Datasets](#link-datasets)
 * [Install](#arrow_down-install)
 * [Deploy](#globe_with_meridians-deploy)
@@ -16,7 +17,11 @@ This repository shows functional programming using survey data from CMD students
 
 In order to be able to visualize this main question, several sub questions have been created. You can find these in my [wiki - Concept](https://github.com/veerleprins/frontend-data/wiki/Concept)
 
-<!-- ## Feature -->
+## :small_orange_diamond: Feature
+This visualization is made with the example from:
+* https://vizhub.com/curran/326730c80fc54969ae501fb58c8cb94b
+* https://www.d3-graph-gallery.com/graph/barplot_button_data_csv.html
+* https://vizhub.com/Razpudding/0e37e2146acf4a8db9a55f6f3509f090?edit=files&file=index.js 
 
 ## :link: Datasets
 The dataset that was used first is the survey data of 93 CMD students who followed the Information Design semester in year 2020.
@@ -83,6 +88,10 @@ https://veerleprins-frontenddata.netlify.app/
 * CurranKelleher. (2018, 23 augustus). Data Visualization 2018 Course Overview [Video]. YouTube. https://www.youtube.com/watch?v=4e3NF8ez95w&list=PL9yYRbwpkykvOXrZumtZWbuaXWHvjD8gi&ab_channel=CurranKelleher
 * Kelleher, C. & VizHub. (z.d.). Making a Bar Chart. VizHub. Geraadpleegd op 2 november 2020, van https://vizhub.com/curran/326730c80fc54969ae501fb58c8cb94b?edit=files&file=index.js
 * Mao, A. & StackOverflow. (2013, 22 maart). d3 remove decimal values from chart. Stack Overflow. https://stackoverflow.com/questions/15578189/d3-remove-decimal-values-from-chart
+<!-- https://stackoverflow.com/questions/17635866/get-values-from-an-object-in-javascript -->
+<!-- https://regex101.com/ -->
+<!-- https://stackoverflow.com/questions/30483613/regular-expression-to-find-string-inside-curly-brackets-javascript -->
+<!-- https://stackoverflow.com/questions/36396160/use-of-if-else-in-javascript-es6 -->
 
 ## :lock: License
 This repo is licensed as [MIT](https://github.com/veerleprins/functional-programming/blob/main/LICENSE) by :copyright: [Veerle Prins](https://github.com/veerleprins), 2020

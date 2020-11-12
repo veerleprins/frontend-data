@@ -1,8 +1,9 @@
 import 'regenerator-runtime/runtime'
 import './../scss/main.scss';
-import { mergeData, toIntegersInObj, toNumbers, createArr, createNaN } from './modules/prepareData';
 import { fetchData } from './modules/collectData';
-import {createViz} from './modules/BarChart.js';
+import { mergeData, toIntegersInObj, toNumbers, createArr, createNaN } from './modules/prepareData';
+import { createViz } from './modules/BarChart.js';
+import { getDataObject, startInteractive } from './modules/interactiveBarChart.js';
 
 // The two API's needed for the visualization:
 const API_1 = 'https://opendata.rdw.nl/resource/b3us-f26s.json';
@@ -28,7 +29,9 @@ async function start() {
   const preparedData = createArr(mergedData);
 
   //Visualize the Data:
-  createViz(preparedData);
+  // createViz(preparedData);
+  // startInteractive(preparedData);
+  getDataObject(preparedData);
 
   // const mergedData = mergeData(facilitiesData, locationData);
   // const preparedData = cleanData(mergedData);
