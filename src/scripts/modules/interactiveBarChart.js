@@ -1,5 +1,6 @@
-// Total code from Laurens
+// Total code from Laurens & Curran
 // Source: https://vizhub.com/Razpudding/781fc8abc97443919613184546720ab0?edit=files&file=index.js
+// Source: https://www.youtube.com/watch?v=MjjYLbShFi8&list=RDCMUCSwd_9jyX4YtDYm9p9MxQqw&start_radio=1&t=1076&ab_channel=CurranKelleher
 
 import {
   scaleLinear,
