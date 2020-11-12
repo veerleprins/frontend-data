@@ -2,7 +2,6 @@ import 'regenerator-runtime/runtime'
 import './../scss/main.scss';
 import { fetchData } from './modules/collectData';
 import { mergeData, toIntegersInObj, toNumbers, createArr, createNaN } from './modules/prepareData';
-import { createViz } from './modules/BarChart.js';
 import { getDataObject, startInteractive } from './modules/interactiveBarChart.js';
 
 // The two API's needed for the visualization:

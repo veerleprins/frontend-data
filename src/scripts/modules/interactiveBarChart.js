@@ -53,7 +53,6 @@ let vizData;
 
 export function getDataObject(data) {
   vizData = data.splice(10, 30);
-  console.log(vizData);
   startInteractive();
 }
 
@@ -64,10 +63,8 @@ const onXColumnClicked = c => {
 }
 
 export function startInteractive () {
-  // const vizData = data.splice(10, 30);
   let columns = Object.keys(vizData[0]);
   columns = [columns[1], columns[3]];
-  console.log(columns);
 
   select('#menus')
   .call(dropdownMenu, {
@@ -76,7 +73,7 @@ export function startInteractive () {
   })
 
   xValue =  p => p.description;
-  // yValue = p => p.chargingPoints;
+  // yValue = p => p.capacity;
   yValue = p => p[yColumn];
 
   createTitle('Charging points per parking area');
