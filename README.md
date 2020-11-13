@@ -1,6 +1,6 @@
 # Frontend Data
 
-![Interactive bar chart with changing y-as when selection a new value](https://user-images.githubusercontent.com/35265583/99072024-82470c00-25b3-11eb-9ba7-4e14406ca169.gif) 
+![Interactive bar chart with changing y-as when selection a new value](https://user-images.githubusercontent.com/35265583/99077718-77917480-25bd-11eb-99fe-025440144eb0.gif) 
 
 
 ## Table of contents:
