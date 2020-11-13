@@ -26,9 +26,9 @@ This visualization is made with the example from:
 * https://www.d3-graph-gallery.com/graph/barplot_button_data_csv.html
 * https://vizhub.com/Razpudding/0e37e2146acf4a8db9a55f6f3509f090?edit=files&file=index.js 
 
-The link to the visualization:   
+The link to my visualization:   
 
-[Interactive Bar Chart](https://veerleprins-frontenddata.netlify.app/)
+[Veerle Prins - Interactive Bar Chart](https://veerleprins-frontenddata.netlify.app/)
 
 ## :link: Datasets
 The dataset that was used first is the survey data of 93 CMD students who followed the Information Design semester in year 2020.
