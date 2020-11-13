@@ -57,7 +57,7 @@ export function startInteractive (data) {
   createScales();
   createAxis(vizData);
   createLabels(yAxisLabel);
-  createBars(vizData);
+  updateBars(0);
 }
 
 // This function creates the title for the graph:
@@ -111,36 +111,42 @@ function createLabels(text) {
       .text(text);
 }
 
-// This function creates all the bars for the graph:
-function createBars(data) {
-  const bars = group
-    .selectAll('rect')
-    .data(data)
+// This function creates and updates all the bars for the graph:
+function updateBars(num) {
+  let bars = group.selectAll('rect').data(vizData);
+  bars
     .enter()
     .append('rect')
+    .merge(bars)
+    .transition()
+    .duration(num)
       .attr('class', 'bars')
       .attr('x', p => xScale(xValue(p)))
       .attr('y', p => yScale(yValue(p)))
-      .attr('width', xScale.bandwidth())
-      .attr('height', d => innerHeight - yScale(yValue(d)));
+      .attr('height', p => innerHeight - yScale(yValue(p)))
+      .attr('width', xScale.bandwidth());
 }
 
 // This function updates the graph when clicked on a new value:
 function selectionChanged() {
 	yColumn = this.value;
   createScales();
-  yScale.domain([0, max(vizData, yValue)]);
-  
-  group.selectAll('rect')
-    .attr('y', p => yScale(yValue(p)))
-    .attr('height', p => innerHeight - yScale(yValue(p)))
+  yScale
+    .domain([0, max(vizData, yValue)]);
+
+  updateBars(1000);
+
   group.select('.axis-y')
+      .transition()
+      .duration(1000)
       .call(axisLeft(yScale).ticks(10));
 
   let value = fromCamel(yColumn);
-  svg.select('.title')
+  svg
+    .select('.title')
     .text(`${value} per parking area`);
-  group.select('.axis-label')
+  group
+    .select('.axis-label')
     .text(`Number of ${value}`);
 }
 

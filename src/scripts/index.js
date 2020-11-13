@@ -3,6 +3,7 @@ import './../scss/main.scss';
 import { fetchData } from './modules/collectData';
 import { mergeData, toIntegersInObj, toNumbers, createArr, createNaN } from './modules/prepareData';
 import { getDataObject, startInteractive } from './modules/interactiveBarChart.js';
+import { startMap } from './modules/BubbleGeoMap' ;
 
 // The two API's needed for the visualization:
 const API_1 = 'https://opendata.rdw.nl/resource/b3us-f26s.json';
@@ -26,11 +27,13 @@ async function start() {
   const mergedData = mergeData(facilitiesData, locationData, ['areaid', 'specifications']);
   createNaN(mergedData);
   const preparedData = createArr(mergedData);
+  console.log(preparedData);
 
   //Visualize the Data:
   // createViz(preparedData);
   startInteractive(preparedData);
   // getDataObject(preparedData);
+  // startMap(preparedData);
 
 
   // const mergedData = mergeData(facilitiesData, locationData);

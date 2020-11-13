@@ -20,7 +20,8 @@
   },
   "homepage": "https://github.com/veerleprins/frontend-data#readme",
   "dependencies": {
-    "d3": "^6.2.0"
+    "d3": "^6.2.0",
+    "topojson": "^3.0.2"
   },
   "devDependencies": {
     "@babel/core": "^7.12.3",
