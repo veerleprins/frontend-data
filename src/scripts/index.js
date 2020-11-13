@@ -27,17 +27,8 @@ async function start() {
   const mergedData = mergeData(facilitiesData, locationData, ['areaid', 'specifications']);
   createNaN(mergedData);
   const preparedData = createArr(mergedData);
-  console.log(preparedData);
 
   //Visualize the Data:
-  // createViz(preparedData);
   startInteractive(preparedData);
-  // getDataObject(preparedData);
   // startMap(preparedData);
-
-
-  // const mergedData = mergeData(facilitiesData, locationData);
-  // const preparedData = cleanData(mergedData);
-  // getCity(preparedData);
-  // createViz(preparedData);
 }
