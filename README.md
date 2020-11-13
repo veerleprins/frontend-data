@@ -1,7 +1,7 @@
 # Frontend Data
 
-<img width="877" alt="Screenshot 2020-11-13 at 02 43 44" src="https://user-images.githubusercontent.com/35265583/99018356-29975500-255a-11eb-86e6-e8ace82d0f1a.png">
-<img width="888" alt="Screenshot 2020-11-13 at 02 43 36" src="https://user-images.githubusercontent.com/35265583/99018367-2dc37280-255a-11eb-8956-afeae99fd16c.png">
+![Interactive bar chart with changing y-as when selection a new value](https://user-images.githubusercontent.com/35265583/99072024-82470c00-25b3-11eb-9ba7-4e14406ca169.gif) 
+
 
 ## Table of contents:
 * [Description](#black_nib-description)
@@ -25,6 +25,10 @@ This visualization is made with the example from:
 * https://vizhub.com/curran/326730c80fc54969ae501fb58c8cb94b
 * https://www.d3-graph-gallery.com/graph/barplot_button_data_csv.html
 * https://vizhub.com/Razpudding/0e37e2146acf4a8db9a55f6f3509f090?edit=files&file=index.js 
+
+The link to the visualization:   
+
+[Interactive Bar Chart](https://veerleprins-frontenddata.netlify.app/)
 
 ## :link: Datasets
 The dataset that was used first is the survey data of 93 CMD students who followed the Information Design semester in year 2020.
