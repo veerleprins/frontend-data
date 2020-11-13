@@ -1,38 +1,56 @@
 body {
   font-size: 1rem;
   margin: 0px;
-}
-
-svg {
-  display: block;
-  margin: auto;
-}
-
-.bars {
-  // fill: #033379;
-  fill: #4F61A1;
-}
-
-text {
-  font-family: sans-serif;
-}
-
-.tick text {
-  fill: #635F5D;
+  background-color: rgb(10, 10, 10);
+  form {
+    font-family: sans-serif;
+    color: white;
+    padding-top: 15px;
+  }
+  svg {
+    display: block;
+    margin: auto;
+    text {
+      font-family: sans-serif;
+      fill: #e4e4e4;
+    }
+    g {
+      .title {
+        fill: white;
+        font-size: 2em;
+        text-anchor: middle;
+      }
+      .bars {
+        fill: lightblue;
+      }
+      .axis-x {
+        .tick line {
+          fill: #e4e4e4;
+        }
+        .tick text {
+          font-size: 1.2em;
+          fill: #a8a8a8;
+        }
+        path {
+          fill: #707070;
+        }
+      }
+      .axis-y {
+        path {
+          fill: #707070;
+        }
+      }
+    }
+  }
 }
 
 .tick line {
-  stroke: #C0C0BB;
+  stroke: #e4e4e4;
 }
 
 .axis-label {
-  font-size: 1em;
-  fill: #635F5D;
-}
-
-.title {
-  font-size: 2em;
-  text-anchor: middle;
+  font-size: 1.5em;
+  fill: #e4e4e4;
 }
 
 #menus select {

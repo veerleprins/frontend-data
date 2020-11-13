@@ -29,8 +29,9 @@ async function start() {
 
   //Visualize the Data:
   // createViz(preparedData);
-  // startInteractive(preparedData);
-  getDataObject(preparedData);
+  startInteractive(preparedData);
+  // getDataObject(preparedData);
+
 
   // const mergedData = mergeData(facilitiesData, locationData);
   // const preparedData = cleanData(mergedData);
